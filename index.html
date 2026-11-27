@@ -111,7 +111,15 @@ img, video { max-width:100%; }
 <button class="bubble" onclick="showNote('Sua amizade é um presente. Que nunca faltem motivos pra você sorrir, sonhos pra realizar e pessoas que cuidem de você.')">Abra quando estiver triste</button>
 <button class="bubble" onclick="showNote('Sim, Sara: você é incrível. E não, isso não é uma pegadinha. Quer dizer... talvez eu esteja te irritando. Mas é verdade!')">Abra só porque sim</button>
 </div><p class="hint">Escolha uma mensagem. Cada botão guarda um carinho diferente. ♡</p></div></section>
-<section class="window" id="poemas"><div class="window-head">📖 Poeminhas para Yuki <span class="dots">● ● ●</span></div><div class="window-body"><div class="poem" id="poemText">No meio de tantos caminhos,\nque a vida insiste em traçar,\nhá amizades que viram abrigo,\ne a sua é bom encontrar.\n\nQue o mundo te trate com carinho,\nque nunca te falte razão pra sorrir,\ne que você lembre, mesmo de longe:\ntem alguém torcendo por ti. ♡</div><button class="action" onclick="nextPoem()">Ler outro poema ♡</button></div></section>
+<section class="window" id="poemas"><div class="window-head">📖 Poeminhas para Yuki <span class="dots">● ● ●</span></div><div class="window-body"><div class="poem" id="poemText">No meio de tantos caminhos,
+que a vida insiste em traçar,
+há amizades que viram abrigo,
+e a sua é bom encontrar.
+
+Que o mundo te trate com carinho,
+que nunca te falte razão pra sorrir,
+e que você lembre, mesmo de longe:
+tem alguém torcendo por ti. ♡</div><button class="action" onclick="nextPoem()">Ler outro poema ♡</button></div></section>
 <section class="window" id="soleiras"><div class="window-head">😈 Central oficial de implicância <span class="dots">● ● ●</span></div><div class="window-body"><p>Uma homenagem às palavras que provavelmente já te fizeram revirar os olhos:</p><div class="tease"><span>Fedorenta premium</span><span>Yuki do Paraguai</span><span>Kuchu Puchu</span><span>Princesa do mau humor</span><span>Minha chatinha</span><span>Serumaninha suspeita</span><span>Bolinho de estresse</span><span>Reclamona oficial</span></div><p class="hint">Observação: todas as provocações vêm com carinho, respeito e risco de levar um sermão. 😂</p><button class="action" onclick="randomTease()">Me irrita, Lucas!</button><p id="teaseResult" aria-live="polite"></p></div></section>
 <section class="window" id="importancia"><div class="window-head">👑 O que eu desejo pra você <span class="dots">● ● ●</span></div><div class="window-body feature"><img src="assets/lucas-paz.png" alt="Lucas em desenho kawaii de moletom branco"><div><p>Quero que você conquiste seus sonhos, tenha paz no coração, encontre motivos pra sorrir e nunca duvide do seu valor. Você merece coisas lindas, Sara. De verdade. ♡</p><strong>Estou na sua torcida!</strong></div></div></section>
 </div>
@@ -166,9 +174,33 @@ Seu navegador não conseguiu reproduzir este vídeo.
 <button class="backtop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Voltar ao topo">↑</button>
 <script>
 const poems=[
-`No meio de tantos caminhos,\\nque a vida insiste em traçar,\\nhá amizades que viram abrigo,\\ne a sua é bom encontrar.\\n\\nQue o mundo te trate com carinho,\\nque nunca te falte razão pra sorrir,\\ne que você lembre, mesmo de longe:\\ntem alguém torcendo por ti. ♡`,
-`Sara, você é feito primavera,\\nmesmo nos dias sem cor.\\nTem um jeito todo seu\\nde espalhar alegria e calor.\\n\\nE se algum dia a vida pesar,\\nlembre do que eu vim dizer:\\nvocê merece o melhor do mundo,\\nhoje e em todo amanhecer. ♡`,
-`Uma amizade não precisa\\nde palavras bonitas todo dia.\\nÀs vezes ela vem em risadas,\\nem zoeira e implicância.\\n\\nE entre um “fedorenta” e outro,\\neu espero que consiga notar:\\nvocê é muito importante,\\ne eu gosto de te ter por perto. ♡`
+`No meio de tantos caminhos,\
+que a vida insiste em traçar,\
+há amizades que viram abrigo,\
+e a sua é bom encontrar.\
+\
+Que o mundo te trate com carinho,\
+que nunca te falte razão pra sorrir,\
+e que você lembre, mesmo de longe:\
+tem alguém torcendo por ti. ♡`,
+`Sara, você é feito primavera,\
+mesmo nos dias sem cor.\
+Tem um jeito todo seu\
+de espalhar alegria e calor.\
+\
+E se algum dia a vida pesar,\
+lembre do que eu vim dizer:\
+você merece o melhor do mundo,\
+hoje e em todo amanhecer. ♡`,
+`Uma amizade não precisa\
+de palavras bonitas todo dia.\
+Às vezes ela vem em risadas,\
+em zoeira e implicância.\
+\
+E entre um “fedorenta” e outro,\
+eu espero que consiga notar:\
+você é muito importante,\
+e eu gosto de te ter por perto. ♡`
 ];
 let poemIndex=0;function nextPoem(){poemIndex=(poemIndex+1)%poems.length;document.getElementById('poemText').textContent=poems[poemIndex]}
 function showNote(text){document.getElementById('modalTitle').textContent='Uma mensagem pra você ♡';document.getElementById('modalText').textContent=text;openModal()}
