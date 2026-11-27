@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffd6e3">
+<meta name="description" content="Um cantinho especial feito com carinho para a Sara.">
+<title>Para Sara ♡ | Minha Fedorenta Favorita</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#ff8eae;--pink2:#ffd6e3;--pale:#fff3f6;--cream:#fffaf2;--brown:#653c35;--ink:#59343b;--hot:#ec5d8a;--line:#f5a9bf;--shadow:0 9px 24px #a74d6b20}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 10%,#fff 0 2px,transparent 3px),linear-gradient(135deg,#fff4f6,#ffe1eb 55%,#fff3e9);background-size:34px 34px,auto;color:var(--ink);font-family:Nunito, sans-serif}
+button{font:inherit;cursor:pointer}a{color:inherit;text-decoration:none}.topbar{position:sticky;top:0;z-index:20;background:#ffe7efed;backdrop-filter:blur(12px);border-bottom:2px solid #f7b6ca;padding:10px 4%;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:900;font-size:1.1rem}.brand span{color:var(--hot)}.topbar small{font-weight:800;color:#9b6571}.layout{max-width:1240px;margin:auto;padding:22px;display:grid;grid-template-columns:220px 1fr;gap:20px}.sidebar{position:sticky;top:76px;align-self:start;background:#fff8f8d9;border:2px solid var(--line);border-radius:24px;padding:17px;box-shadow:var(--shadow)}.profile{text-align:center;padding:8px 5px 16px}.profile img{width:125px;height:125px;object-fit:contain;border-radius:28px;background:#ffe2ea}.profile h2{font-family:Pacifico,cursive;font-size:1.65rem;margin:8px 0 0;color:var(--brown)}.profile p{margin:3px 0;color:#a36a78;font-weight:800}.nav{display:grid;gap:8px}.nav a{background:#fff;border:1.5px solid #f5bfd0;padding:10px 12px;border-radius:14px;font-weight:800;transition:.2s}.nav a:hover{transform:translateX(4px);background:#ffe3ec}.side-note{text-align:center;font-size:.85rem;margin-top:18px;color:#a66a78}.main{min-width:0}.hero{position:relative;overflow:hidden;min-height:330px;border:2px solid var(--line);border-radius:28px;background:linear-gradient(120deg,#ffd7e5,#fff1f3 55%,#ffe7d5);box-shadow:var(--shadow);padding:32px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:16px}.hero:before,.hero:after{content:"♡";position:absolute;color:#ff9db8;font-size:4rem;opacity:.45}.hero:before{top:5px;right:24px}.hero:after{bottom:4px;left:25px}.hero-copy{position:relative;z-index:1}.eyebrow{font-weight:900;color:#bd6a83;letter-spacing:2px;text-transform:uppercase}.hero h1{font-family:Pacifico,cursive;font-size:clamp(3.3rem,7vw,6rem);line-height:1.1;margin:7px 0;color:#8a4d4b;text-shadow:3px 4px 0 #fff}.hero h1 span{color:var(--hot)}.hero p{font-size:1.1rem;font-weight:800;max-width:470px}.hero-art{display:flex;justify-content:center;align-items:center;position:relative}.hero-art img{width:min(100%,340px);max-height:285px;object-fit:contain;filter:drop-shadow(0 12px 8px #a04f6525);animation:bob 4s ease-in-out infinite}.floating-heart{position:absolute;font-size:2rem;animation:float 3s ease-in-out infinite}.floating-heart.one{top:5%;left:7%}.floating-heart.two{bottom:8%;right:8%;animation-delay:1s}@keyframes bob{50%{transform:translateY(-9px) rotate(2deg)}}@keyframes float{50%{transform:translateY(-13px) rotate(12deg)}}
+.section-title{font-family:Pacifico,cursive;color:#995361;font-size:1.8rem;margin:28px 4px 13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.window{background:#fff9fae8;border:2px solid var(--line);border-radius:21px;overflow:hidden;box-shadow:var(--shadow);scroll-margin-top:90px}.window-head{display:flex;align-items:center;gap:8px;background:linear-gradient(90deg,#ffdce7,#fff0f3);border-bottom:1.5px solid #f5c0d0;padding:10px 14px;font-weight:900}.dots{margin-left:auto;letter-spacing:3px;color:#c77d90}.window-body{padding:17px}.message-list{display:grid;gap:9px}.bubble{border:1.5px solid #f2a8bf;background:#fff;border-radius:16px;padding:11px 13px;text-align:left;color:#774753;font-weight:800;transition:.2s}.bubble:hover{background:#ffe8ef;transform:scale(1.015)}.bubble:before{content:"♡ ";color:var(--hot)}.hint{font-size:.86rem;color:#a56f7c;margin:10px 0 0}.poem{background:#fff0f4;border-radius:17px;padding:17px;text-align:center;font-family:Georgia,serif;font-style:italic;line-height:1.8;white-space:pre-line}.action{border:0;border-radius:999px;background:linear-gradient(120deg,#ff8eae,#ec5d8a);color:white;font-weight:900;padding:11px 18px;box-shadow:0 5px 0 #c84d78;margin-top:12px}.action:hover{filter:brightness(1.04);transform:translateY(-1px)}.bear-row{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:10px}.bear-row img{width:78px;height:78px;object-fit:contain;border-radius:16px}.tease{display:flex;flex-wrap:wrap;gap:8px}.tease span{background:#ffe3ec;border:1px dashed #ed91ac;border-radius:999px;padding:8px 12px;font-weight:900;color:#985466}.feature{display:flex;gap:15px;align-items:center}.feature img{width:115px;height:115px;object-fit:contain;border-radius:18px;background:#fff0f3}.feature p{line-height:1.65}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.gallery button{border:0;background:#ffe5ed;padding:7px;border-radius:16px}.gallery img,.gallery video{width:100%;height:130px;object-fit:contain;border-radius:12px;background:#fff0f4}.gallery .gallery-item{border:0;background:#ffe5ed;padding:7px;border-radius:16px;min-width:0}.gallery .gallery-item video{display:block;object-fit:contain}.gallery .gallery-item span{display:block;padding:5px 2px 1px;font-size:.82rem;font-weight:900;color:#985466}.gallery button:hover{transform:rotate(-2deg) scale(1.03)}.surprise{background:linear-gradient(135deg,#fff0f4,#ffe1e9);border-radius:18px;padding:20px;text-align:center}.gift{font-size:4rem;display:block;animation:bob 2.5s infinite}.gift-image{display:block;width:min(220px,70%);height:220px;object-fit:contain;margin:0 auto 12px;border-radius:22px;background:#fff;border:3px solid #ffd2df;box-shadow:0 8px 18px #d9799630;animation:bob 2.5s infinite}.hidden-message{display:none;background:#fff;border-radius:16px;padding:14px;margin-top:12px;font-weight:800}.hidden-message.show{display:block;animation:pop .35s}@keyframes pop{from{transform:scale(.85);opacity:0}to{transform:scale(1);opacity:1}}.final{background:linear-gradient(135deg,#fff0f4,#ffe1e9);text-align:center;padding:25px}.final p{line-height:1.8;font-size:1.03rem}.signature{font-family:Pacifico,cursive;font-size:1.8rem;color:#d75b83}.counter{text-align:center;padding:20px}.counter strong{display:block;font-size:2.4rem;color:#e65d8b}.footer{text-align:center;padding:28px 10px;color:#a56b7b;font-weight:800}.footer .heart{color:#ed6b91}.modal{position:fixed;inset:0;background:#43232d88;z-index:50;display:none;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.modal-card{max-height:90vh;overflow:auto;max-width:440px;width:100%;background:#fff7f9;border:3px solid #f4a7bf;border-radius:24px;padding:25px;text-align:center;box-shadow:0 20px 60px #32101d55}.modal-card h3{font-family:Pacifico,cursive;color:#a2526c;font-size:1.8rem}.close{float:right;border:0;background:#ffe0e9;border-radius:50%;width:34px;height:34px;font-size:1.1rem}.quiz-options{display:grid;gap:8px}.quiz-options button{border:1px solid #efadc1;border-radius:14px;background:#fff;padding:10px;font-weight:800;color:#784b58}.quiz-options button:hover{background:#ffe4ed}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,150%);background:#713e50;color:#fff;padding:12px 18px;border-radius:999px;z-index:80;font-weight:900;transition:.3s;box-shadow:var(--shadow)}.toast.show{transform:translate(-50%,0)}.backtop{position:fixed;right:18px;bottom:18px;border:0;background:#ec6c94;color:#fff;border-radius:50%;width:48px;height:48px;font-size:1.3rem;box-shadow:var(--shadow)}
+@media(max-width:850px){.layout{grid-template-columns:1fr;padding:12px}.sidebar{position:static}.profile{display:flex;align-items:center;justify-content:center;gap:12px;text-align:left}.profile img{width:75px;height:75px}.nav{display:flex;overflow-x:auto;padding-bottom:4px}.nav a{white-space:nowrap}.side-note{display:none}.hero{padding:22px;min-height:260px}.hero-art img{max-height:220px}}
+@media(max-width:600px){.topbar small{display:none}.hero{grid-template-columns:1fr;text-align:center}.hero p{margin:8px auto}.hero-art img{max-height:190px;width:70%}.grid{grid-template-columns:1fr}.gallery img,.gallery video{height:100px}.gallery .gallery-item span{font-size:.76rem}.feature{align-items:flex-start}.section-title{font-size:1.55rem}.window-body{padding:14px}}
+
+/* Ajustes responsivos: evita cortes e rolagem horizontal em celulares */
+html, body { width:100%; max-width:100%; overflow-x:clip; }
+body { min-width:0; }
+img, video { max-width:100%; }
+.layout, .main, .sidebar, .window, .window-body, .hero, .hero-copy, .hero-art { min-width:0; }
+.topbar { min-width:0; flex-wrap:wrap; }
+.brand { min-width:0; overflow-wrap:anywhere; }
+.nav a, .window-head, .section-title { overflow-wrap:anywhere; }
+.gallery { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.gallery .gallery-item { min-width:0; }
+.gallery .gallery-item video { width:100%; height:auto; aspect-ratio:4/3; object-fit:contain; }
+.gallery img { width:100%; height:auto; aspect-ratio:1/1; object-fit:contain; }
+.window-body video { max-width:100%; }
+.feature > div { min-width:0; }
+.action { max-width:100%; white-space:normal; }
+
+@media (max-width: 850px) {
+  .layout { display:block; width:100%; max-width:100%; padding:10px; }
+  .sidebar { position:static; width:100%; padding:12px; margin-bottom:14px; }
+  .profile { display:flex; justify-content:center; align-items:center; gap:10px; text-align:left; padding:2px 4px 10px; }
+  .profile img { width:64px; height:64px; flex:0 0 64px; }
+  .profile h2 { font-size:1.35rem; }
+  .profile p { font-size:.85rem; }
+  .nav { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; }
+  .nav a { display:flex; justify-content:center; align-items:center; text-align:center; white-space:normal; min-width:0; padding:9px 5px; font-size:.82rem; line-height:1.2; }
+  .hero { grid-template-columns:minmax(0,1fr); text-align:center; padding:22px 16px; min-height:0; gap:8px; }
+  .hero-copy { width:100%; }
+  .hero h1 { font-size:clamp(2.8rem,11vw,4.5rem); }
+  .hero p { margin:8px auto; max-width:38rem; font-size:1rem; }
+  .hero-art img { width:min(78%,320px); max-height:220px; }
+  .grid { grid-template-columns:minmax(0,1fr); }
+}
+@media (max-width: 600px) {
+  .topbar { padding:10px 14px; }
+  .topbar small { display:none; }
+  .layout { padding:8px; }
+  .sidebar { border-radius:18px; }
+  .nav { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .nav a { font-size:.86rem; min-height:40px; }
+  .hero { border-radius:22px; padding:20px 14px; }
+  .hero .eyebrow { font-size:.75rem; letter-spacing:1px; }
+  .hero h1 { font-size:clamp(2.7rem,13vw,3.8rem); }
+  .hero-art img { width:min(88%,300px); max-height:190px; }
+  .section-title { font-size:1.45rem; line-height:1.35; margin:22px 4px 11px; }
+  .window { border-radius:17px; }
+  .window-head { padding:9px 10px; font-size:.9rem; }
+  .window-body { padding:12px; }
+  .dots { display:none; }
+  .gallery { grid-template-columns:minmax(0,1fr); gap:12px; }
+  .gallery .gallery-item { padding:9px; }
+  .gallery .gallery-item video { aspect-ratio:16/10; max-height:320px; }
+  .gallery .gallery-item span { font-size:.9rem; padding:7px 3px 2px; }
+  .gallery img { max-height:260px; }
+  .feature { flex-direction:column; align-items:center; text-align:center; }
+  .feature img { width:100px; height:100px; }
+  .gift-image { width:min(220px,85%); height:auto; aspect-ratio:1/1; }
+  .poem { padding:13px; font-size:.96rem; overflow-wrap:anywhere; }
+  .modal { padding:10px; }
+  .modal-card { padding:18px 14px; max-height:88dvh; }
+  .backtop { right:12px; bottom:12px; width:44px; height:44px; }
+}
+@media (max-width: 360px) {
+  .brand { font-size:1rem; }
+  .nav a { font-size:.78rem; padding:8px 3px; }
+  .window-head { font-size:.82rem; }
+  .action { padding:10px 13px; font-size:.9rem; }
+}
+
+</style>
+</head>
+<body>
+<header class="topbar"><div class="brand">🐻 Cantinho da Sara <span>♡</span></div><small>feito com carinho por Lucas ✨</small></header>
+<div class="layout">
+<aside class="sidebar">
+  <div class="profile"><img src="assets/sara-feliz.png" alt="Sara em versão kawaii"><div><h2>Sara ♡</h2><p>Minha fedorenta favorita</p></div></div>
+  <nav class="nav">
+    <a href="#inicio">🏠 Início</a><a href="#mensagens">💌 Mensagens</a><a href="#poemas">📖 Poemas</a><a href="#soleiras">😈 Soleiras</a><a href="#galeria">🧸 Galeria</a><a href="#video-amizade">🎬 Vídeo</a><a href="#surpresa">🎁 Surpresa</a><a href="#final">💗 Recadinho final</a>
+  </nav>
+  <p class="side-note">Um site inteirinho porque você merece, sua chata. ♡</p>
+</aside>
+<main class="main">
+<section class="hero" id="inicio">
+ <div class="hero-copy"><div class="eyebrow">um cantinho feito especialmente para...</div><h1>Sara<span>♡</span></h1><p>Minha fedorenta, minha Yuki, minha Kuchu Puchu... uma amiga incrível, parceira de risadas e implicâncias — amizade de verdade!</p><button class="action" onclick="openModal('welcome')">Clique aqui, sua curiosa ♡</button></div>
+ <div class="hero-art"><span class="floating-heart one">♡</span><img src="assets/dupla-amigos.jpg" alt="Lucas e Sara sorrindo juntos em desenho kawaii"><span class="floating-heart two">♥</span></div>
+</section>
+
+<h2 class="section-title">♡ Pequenas coisas que eu queria te dizer</h2>
+<div class="grid">
+<section class="window" id="mensagens"><div class="window-head">💌 Mensagens especiais <span class="dots">● ● ●</span></div><div class="window-body"><div class="message-list">
+<button class="bubble" onclick="showNote('Você é uma daquelas pessoas que deixam os dias mais leves. Obrigado por ser essa amiga tão especial!')">Abra quando esquecer o quanto é especial</button>
+<button class="bubble" onclick="showNote('Eu posso te irritar umas 87 vezes por dia, mas nunca vou deixar de torcer pela sua felicidade. Quero o melhor pra você!')">Abra quando precisar de apoio</button>
+<button class="bubble" onclick="showNote('Sua amizade é um presente. Que nunca faltem motivos pra você sorrir, sonhos pra realizar e pessoas que cuidem de você.')">Abra quando estiver triste</button>
+<button class="bubble" onclick="showNote('Sim, Sara: você é incrível. E não, isso não é uma pegadinha. Quer dizer... talvez eu esteja te irritando. Mas é verdade!')">Abra só porque sim</button>
+</div><p class="hint">Escolha uma mensagem. Cada botão guarda um carinho diferente. ♡</p></div></section>
+<section class="window" id="poemas"><div class="window-head">📖 Poeminhas para Yuki <span class="dots">● ● ●</span></div><div class="window-body"><div class="poem" id="poemText">No meio de tantos caminhos,\nque a vida insiste em traçar,\nhá amizades que viram abrigo,\ne a sua é bom encontrar.\n\nQue o mundo te trate com carinho,\nque nunca te falte razão pra sorrir,\ne que você lembre, mesmo de longe:\ntem alguém torcendo por ti. ♡</div><button class="action" onclick="nextPoem()">Ler outro poema ♡</button></div></section>
+<section class="window" id="soleiras"><div class="window-head">😈 Central oficial de implicância <span class="dots">● ● ●</span></div><div class="window-body"><p>Uma homenagem às palavras que provavelmente já te fizeram revirar os olhos:</p><div class="tease"><span>Fedorenta premium</span><span>Yuki do Paraguai</span><span>Kuchu Puchu</span><span>Princesa do mau humor</span><span>Minha chatinha</span><span>Serumaninha suspeita</span><span>Bolinho de estresse</span><span>Reclamona oficial</span></div><p class="hint">Observação: todas as provocações vêm com carinho, respeito e risco de levar um sermão. 😂</p><button class="action" onclick="randomTease()">Me irrita, Lucas!</button><p id="teaseResult" aria-live="polite"></p></div></section>
+<section class="window" id="importancia"><div class="window-head">👑 O que eu desejo pra você <span class="dots">● ● ●</span></div><div class="window-body feature"><img src="assets/lucas-paz.png" alt="Lucas em desenho kawaii de moletom branco"><div><p>Quero que você conquiste seus sonhos, tenha paz no coração, encontre motivos pra sorrir e nunca duvide do seu valor. Você merece coisas lindas, Sara. De verdade. ♡</p><strong>Estou na sua torcida!</strong></div></div></section>
+</div>
+
+<h2 class="section-title">♡ Um álbum de figurinhas da nossa amizade</h2>
+<div class="grid">
+<section class="window" id="galeria"><div class="window-head">🧸 Galeria kawaii da Sara e do Lucas <span class="dots">● ● ●</span></div><div class="window-body"><div class="gallery">
+<button onclick="openImage('assets/sara-feliz.png','Sara sorrindo ♡')"><img src="assets/sara-feliz.png" alt="Sara sorrindo"></button>
+<div class="gallery-item"><video controls playsinline preload="metadata" poster="assets/sara-bravinha.png" aria-label="Animação da Sara bravinha"><source src="assets/sara-bravinha-animada.mp4" type="video/mp4">Seu navegador não reproduziu o vídeo.</video><span>Sara bravinha 😤</span></div>
+<button onclick="openImage('assets/sara-paz.png','Yuki fazendo paz e amor ✌️')"><img src="assets/sara-paz.png" alt="Sara fazendo sinal de paz"></button>
+<button onclick="openImage('assets/sara-timida.png','Sara tímida ♡')"><img src="assets/sara-timida.png" alt="Sara tímida"></button>
+<button onclick="openImage('assets/sara-emburrada.png','Olha essa cara emburrada 😂')"><img src="assets/sara-emburrada.png" alt="Sara emburrada"></button>
+<button onclick="openImage('assets/sara-ursinho.png','Sara e seu ursinho 🧸')"><img src="assets/sara-ursinho.png" alt="Sara abraçada a um ursinho"></button>
+<button onclick="openImage('assets/lucas-paz.png','Lucas fazendo paz ✌️')"><img src="assets/lucas-paz.png" alt="Lucas fazendo sinal de paz"></button>
+<button onclick="openImage('assets/lucas-esperto.png','Lucas aprontando 😏')"><img src="assets/lucas-esperto.png" alt="Lucas com expressão brincalhona"></button>
+<div class="gallery-item"><video controls playsinline preload="metadata" poster="assets/lucas-rindo.png" aria-label="Animação do Lucas rindo"><source src="assets/lucas-rindo-animado.mp4" type="video/mp4">Seu navegador não reproduziu o vídeo.</video><span>Lucas rindo KKKK</span></div>
+<div class="gallery-item"><video controls playsinline preload="metadata" poster="assets/dupla-corrida.jpg" aria-label="Animação de Lucas e Sara correndo"><source src="assets/dupla-corrida-animada.mp4" type="video/mp4">Seu navegador não reproduziu o vídeo.</video><span>Corrida da implicância 🏃‍♀️</span></div></div>
+<p class="hint">Nossas versões em desenho kawaii — amizade e implicância em forma de figurinha! ♡</p></div></section>
+<section class="window" id="surpresa"><div class="window-head">🎁 Uma surpresa pra você <span class="dots">● ● ●</span></div><div class="window-body surprise"><img class="gift-image" src="assets/sara-ursinho.png" alt="Sara abraçada ao seu ursinho, o presente especial"><strong>Um presentinho especial: você e seu ursinho! 🧸</strong><br><button class="action" onclick="revealGift()">Abrir meu presente ♡</button><div class="hidden-message" id="giftText">Surpresa! Você ganhou um lembrete vitalício: você é importante, querida e merece ser muito feliz. E ganhou também o direito de me chamar de insuportável por 24 horas. Só 24, não abusa! 😂💗</div></div></section>
+</div>
+
+<h2 class="section-title">♡ Central de irritação do Lucas 😈</h2>
+<section class="window" id="irritacao"><div class="window-head">😤 Você me irritou de novo?! <span class="dots">● ● ●</span></div><div class="window-body feature">
+<img src="assets/dupla-bochechas.jpg" alt="Lucas apertando de leve as bochechas da Sara numa brincadeira entre amigos">
+<div><p>Botão oficial para quando eu resolver implicar com você. Prepare as bochechas, Yuki! É só brincadeira de amigos, KKKKK.</p>
+<button class="action" onclick="cheekAttack()">APERTAR AS BOCHECHAS! 🤏💗</button>
+<p class="hint" id="cheekCaption" aria-live="polite">Prometo devolver suas bochechas... talvez. 😂</p></div></div></section>
+
+<section class="window" id="video-amizade" style="margin-top:15px">
+<div class="window-head">🎬 A brincadeira em movimento <span class="dots">● ● ●</span></div>
+<div class="window-body" style="text-align:center">
+<p>A clássica brincadeira das bochechas agora ganhou movimento! KKKKK 🤏</p>
+<video controls playsinline preload="metadata" poster="assets/dupla-bochechas.jpg" style="display:block;width:100%;max-width:560px;max-height:420px;object-fit:contain;margin:12px auto;border-radius:18px;background:#fff0f4">
+<source src="assets/brincadeira-bochechas.mp4" type="video/mp4">
+Seu navegador não conseguiu reproduzir este vídeo.
+</video>
+<p class="hint">Lucas aprontando e Sara ficando bravinha — amizade e zoeira, sempre com carinho. ♡</p>
+</div>
+</section>
+
+<h2 class="section-title">♡ Um desafio pra você, Sara!</h2>
+<section class="window"><div class="window-head">🎮 Quiz: quanto você conhece o Lucas? <span class="dots">● ● ●</span></div><div class="window-body"><p id="quizQuestion"><strong>Pergunta 1:</strong> Por que o Lucas te chama de fedorenta?</p><div class="quiz-options" id="quizOptions"><button onclick="answerQuiz(0)">Porque é um apelido carinhoso e ele gosta de te irritar</button><button onclick="answerQuiz(1)">Porque ele esqueceu seu nome</button><button onclick="answerQuiz(2)">Porque é uma senha secreta</button></div><p id="quizFeedback" aria-live="polite"></p></div></section>
+
+<h2 class="section-title">♡ Antes de ir...</h2>
+<section class="window final" id="final"><div class="window-body"><div style="font-size:2.5rem">💗 🧸 💗</div><h2 class="section-title" style="margin-top:0">Sara, minha Kuchu Puchu...</h2><p>Talvez eu não fale isso toda hora porque passo boa parte do tempo te perturbando, mas sua amizade é muito importante pra mim. Obrigado pelas conversas, pelas risadas e por ser essa pessoa única.<br><br>Eu quero ver você feliz, realizando seus sonhos e recebendo todo o carinho que merece. Nunca se diminua e nunca pense que não faz diferença. Você faz, sim.<br><br>Continue sendo essa Sara: especial, engraçada, teimosa às vezes (muitas vezes, na verdade) e impossível de substituir.</p><p class="signature">Com carinho, Lucas ♡</p><button class="action" onclick="sendHearts()">Clique para receber um abraço virtual 🤗</button></div></section>
+<div class="window counter"><div class="window-head">⏳ Um lembrete</div><div class="window-body"><strong>∞</strong><b>Carinho e torcida por você</b><p>Que venham muitas histórias boas pela frente, Sara! ♡</p></div></div>
+<footer class="footer">Feito com muito carinho por Lucas <span class="heart">♥</span> para Sara · 2026<br><small>Um site pequeno, mas com um carinho gigante.</small></footer>
+</main></div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><button class="close" onclick="closeModal()" aria-label="Fechar">×</button><h3 id="modalTitle">Oiii, Sara! ♡</h3><p id="modalText">Seja bem-vinda ao seu cantinho! Foi feito pra te lembrar que você é uma amiga muito especial. Agora pode sorrir, sua fedorenta. 🧸</p><button class="action" onclick="closeModal()">Tá bom, seu chato ♡</button></div></div>
+<div class="toast" id="toast">Um abraço apertado pra você! ♡</div>
+<button class="backtop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Voltar ao topo">↑</button>
+<script>
+const poems=[
+`No meio de tantos caminhos,\\nque a vida insiste em traçar,\\nhá amizades que viram abrigo,\\ne a sua é bom encontrar.\\n\\nQue o mundo te trate com carinho,\\nque nunca te falte razão pra sorrir,\\ne que você lembre, mesmo de longe:\\ntem alguém torcendo por ti. ♡`,
+`Sara, você é feito primavera,\\nmesmo nos dias sem cor.\\nTem um jeito todo seu\\nde espalhar alegria e calor.\\n\\nE se algum dia a vida pesar,\\nlembre do que eu vim dizer:\\nvocê merece o melhor do mundo,\\nhoje e em todo amanhecer. ♡`,
+`Uma amizade não precisa\\nde palavras bonitas todo dia.\\nÀs vezes ela vem em risadas,\\nem zoeira e implicância.\\n\\nE entre um “fedorenta” e outro,\\neu espero que consiga notar:\\nvocê é muito importante,\\ne eu gosto de te ter por perto. ♡`
+];
+let poemIndex=0;function nextPoem(){poemIndex=(poemIndex+1)%poems.length;document.getElementById('poemText').textContent=poems[poemIndex]}
+function showNote(text){document.getElementById('modalTitle').textContent='Uma mensagem pra você ♡';document.getElementById('modalText').textContent=text;openModal()}
+function openModal(){document.getElementById('modal').classList.add('open')}function closeModal(){const video=document.querySelector('#modalText video');if(video){video.pause();video.currentTime=0}document.getElementById('modal').classList.remove('open')}
+function revealGift(){document.getElementById('giftText').classList.toggle('show')}
+const teases=['Fedorenta, já tomou banho de carinho hoje? 😂','Yuki, sua missão de hoje é sorrir. Sem reclamar!','Kuchu Puchu, favor parar de ser tão implicante.','Alerta: uma Sara muito linda e muito teimosa foi detectada.','Você é um docinho... daqueles que dão trabalho pra abrir.'];
+function randomTease(){document.getElementById('teaseResult').textContent=teases[Math.floor(Math.random()*teases.length)]}
+const questions=[{q:'Por que o Lucas te chama de fedorenta?',a:['Porque é um apelido carinhoso e ele gosta de te irritar','Porque esqueceu seu nome','Porque é uma senha secreta'],correct:0,ok:'Acertou! Você já conhece as implicâncias dele. 😂'},{q:'O que ele mais deseja pra você?',a:['Que você pague um lanche','Que você seja feliz e realize seus sonhos','Que você pare de reclamar'],correct:1,ok:'Isso mesmo! Ele quer ver você conquistando o mundo. ♡'}];let qi=0;
+function answerQuiz(n){let q=questions[qi];let f=document.getElementById('quizFeedback');if(n===q.correct){f.textContent=q.ok;qi++;if(qi<questions.length){setTimeout(()=>{document.getElementById('quizQuestion').textContent='Pergunta '+(qi+1)+': '+questions[qi].q;document.getElementById('quizOptions').innerHTML=questions[qi].a.map((x,i)=>`<button onclick="answerQuiz(${i})">${x}</button>`).join('');f.textContent=''},1300)}else{setTimeout(()=>{document.getElementById('quizQuestion').textContent='Você concluiu o quiz! 🏆';document.getElementById('quizOptions').innerHTML='<button onclick="restartQuiz()">Jogar de novo ♡</button>';f.textContent='Resultado: oficialmente uma especialista em Lucas.'},900)}}else{f.textContent='Eitaaa, errou! Tenta mais uma vez, Sara. 😝'}}
+function restartQuiz(){qi=0;document.getElementById('quizQuestion').textContent='Pergunta 1: '+questions[0].q;document.getElementById('quizOptions').innerHTML=questions[0].a.map((x,i)=>`<button onclick="answerQuiz(${i})">${x}</button>`).join('');document.getElementById('quizFeedback').textContent=''}
+function openImage(src,title){document.getElementById('modalTitle').textContent=title;document.getElementById('modalText').innerHTML=`<img src="${src}" alt="${title}" style="width:190px;max-width:100%;height:190px;object-fit:contain">`;openModal()}
+function sendHearts(){for(let i=0;i<18;i++){let h=document.createElement('span');h.textContent=['💗','💕','💖','♡'][i%4];h.style.cssText=`position:fixed;left:${Math.random()*100}vw;top:100vh;font-size:${18+Math.random()*22}px;z-index:90;pointer-events:none;transition:transform 2.5s ease,opacity 2.5s`;document.body.appendChild(h);requestAnimationFrame(()=>{h.style.transform=`translateY(-110vh) rotate(${Math.random()*100-50}deg)`;h.style.opacity='0'});setTimeout(()=>h.remove(),2600)}toast('Abraço virtual enviado! ♡')}
+let toastTimer;function toast(t){let el=document.getElementById('toast');el.textContent=t;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2500)}
+function cheekAttack(){
+  document.getElementById('modalTitle').textContent='KUCHU PUCHU!!! 🤏💗';
+  document.getElementById('modalText').innerHTML='<video controls autoplay muted playsinline loop style="width:100%;max-width:360px;max-height:55vh;object-fit:contain;border-radius:18px;background:#fff0f4"><source src="assets/brincadeira-bochechas.mp4" type="video/mp4">Seu navegador não conseguiu reproduzir este vídeo.</video><p>Essa é a dupla da bagunça: um apronta, a outra fecha a cara. KKKKK. 💗</p>';
+  openModal();
+  document.getElementById('cheekCaption').textContent='Missão cumprida: Sara foi oficialmente irritada. 😈';
+}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+</script>
+</body></html>
